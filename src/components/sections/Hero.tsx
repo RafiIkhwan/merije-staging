@@ -26,7 +26,7 @@ export function Hero() {
   };
 
   return (
-    <section ref={containerRef} className="pt-10 pb-20 md:pt-14 md:pb-32 overflow-hidden">
+    <section ref={containerRef} className="pt-24 pb-20 md:pt-28 md:pb-32 overflow-hidden">
       <Container className="flex flex-col items-center">
         {/* Main Title */}
         <motion.div 
