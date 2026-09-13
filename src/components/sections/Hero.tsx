@@ -2,7 +2,7 @@
 
 import { Container } from "../layout/Container";
 import Link from "next/link";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, type Variants } from "framer-motion";
 import { useRef } from "react";
 
 export function Hero() {
@@ -15,12 +15,12 @@ export function Hero() {
 
   const rotate = useTransform(scrollYProgress, [0, 1], [-80, 80]);
 
-  const textVariant = {
+  const textVariant: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
 
-  const cardVariant = {
+  const cardVariant: Variants = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut", delay: 0.2 } }
   };

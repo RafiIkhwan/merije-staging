@@ -48,11 +48,11 @@ export function Footer() {
           <div className="flex flex-col gap-2 relative z-10 w-full">
             
             {/* Email Link */}
-            <a href="mailto:halo@merije.id" className="w-full flex items-center justify-between bg-[#FFD628] px-5 py-3 md:px-6 md:py-3.5 rounded-[1rem] hover:bg-[#f0c822] transition-colors group">
+            <a href="mailto:merijeofficial@gmail.com" className="w-full flex flex-wrap items-center justify-between gap-x-4 gap-y-2 bg-[#FFD628] px-5 py-3 md:px-6 md:py-3.5 rounded-[1rem] hover:bg-[#f0c822] transition-colors group">
               <span className="font-bold text-[14px] md:text-[15px] text-foreground">Email</span>
-              <div className="flex items-center gap-2">
+              <div className="flex min-w-0 flex-1 items-center justify-end gap-2">
                 <span className="bg-foreground/10 text-foreground/80 text-[10px] md:text-[11px] font-bold px-2 py-0.5 rounded-full group-hover:bg-foreground/20 transition-colors">Copy</span>
-                <span className="font-bold text-[13px] md:text-[14px] text-foreground">halo@merije.id</span>
+                <span className="min-w-0 break-all text-right font-bold text-[12px] md:text-[14px] text-foreground">merijeofficial@gmail.com</span>
               </div>
             </a>
 
@@ -65,7 +65,7 @@ export function Footer() {
             </a>
 
             {/* Instagram Link */}
-            <a href="#" className="w-full flex items-center justify-between bg-[#FFD628] px-5 py-3 md:px-6 md:py-3.5 rounded-[1rem] hover:bg-[#f0c822] transition-colors">
+            <a href="https://www.instagram.com/merije.official/?utm_source=ig_web_button_share_sheet" className="w-full flex items-center justify-between bg-[#FFD628] px-5 py-3 md:px-6 md:py-3.5 rounded-[1rem] hover:bg-[#f0c822] transition-colors">
               <span className="font-bold text-[14px] md:text-[15px] text-foreground">Instagram</span>
               <span className="text-foreground">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
