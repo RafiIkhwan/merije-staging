@@ -2,6 +2,7 @@
 
 import { Container } from "../layout/Container";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useTransform, type Variants } from "framer-motion";
 import { useRef } from "react";
 
@@ -40,8 +41,16 @@ export function Hero() {
         >
           <motion.h1 
             variants={textVariant}
-            className="text-6xl sm:text-7xl md:text-8xl lg:text-[110px] font-sans font-semibold tracking-tight text-foreground leading-[0.9]"
+            className="flex items-center justify-center gap-3 text-6xl sm:text-7xl md:text-8xl lg:text-[110px] font-sans font-semibold tracking-tight text-foreground leading-[0.9]"
           >
+            <Image
+              src="/favicon.svg"
+              alt=""
+              width={140}
+              height={140}
+              aria-hidden="true"
+              className="h-[60px] w-[60px] shrink-0 rounded-full object-cover sm:h-[72px] sm:w-[72px] md:h-[96px] md:w-[96px] lg:h-[140px] lg:w-[140px]"
+            />
             Merijé Studio
           </motion.h1>
         </motion.div>

@@ -17,6 +17,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Merijé — Undangan Digital",
   description: "Undangan digital yang dirancang untuk menjadi bagian dari cerita hari spesialmu.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
