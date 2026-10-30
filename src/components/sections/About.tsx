@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Container } from "../layout/Container";
 import Image from "next/image";
 import Link from "next/link";
+import { getWhatsAppUrl } from "@/lib/links";
 
 export function About() {
   return (
@@ -86,7 +87,7 @@ export function About() {
                  Kualitas Butik.<br/>Harga Jujur.
                </h3>
                <p className="text-foreground/80 text-[15px] md:text-base leading-[1.6]">
-                 Kualitas desain sekelas agensi premium tanpa biaya tersembunyi. Tidak ada "upgrade" paksaan atau biaya tambahan untuk sekadar menghilangkan iklan. Semuanya sudah bersih dari awal.
+                 Kualitas desain sekelas agensi premium tanpa biaya tersembunyi. Tidak ada &ldquo;upgrade&rdquo; paksaan atau biaya tambahan untuk sekadar menghilangkan iklan. Semuanya sudah bersih dari awal.
                </p>
              </motion.div>
 
@@ -107,7 +108,7 @@ export function About() {
               Spesialis Gaya Minimalis
             </h3>
             <p className="text-base md:text-[17px] text-foreground/80 leading-[1.6] max-w-[340px] relative z-10">
-              Gaya desain kami difokuskan pada tipografi yang elegan dan pemanfaatan ruang kosong (*white space*). Kami menghindari dekorasi berlebihan agar foto kalian yang menjadi bintangnya.
+              Gaya desain kami difokuskan pada tipografi yang elegan dan pemanfaatan ruang kosong (<em>white space</em>). Kami menghindari dekorasi berlebihan agar foto kalian yang menjadi bintangnya.
             </p>
 
             {/* Abstract Graphic (Stacking semicircles) */}
@@ -161,8 +162,10 @@ export function About() {
                 </ul>
               </div>
               
-              <Link 
-                href="#"
+              <Link
+                href={getWhatsAppUrl("Halo Merijé, saya ingin diskusi soal undangan digital.")}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex w-fit items-center gap-2 px-8 py-4 bg-foreground text-background rounded-full text-[15px] font-bold hover:bg-foreground/90 transition-transform hover:scale-105"
               >
                 Hubungi Kami via WA

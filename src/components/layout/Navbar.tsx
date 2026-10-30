@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { Container } from "./Container";
+import { getWhatsAppUrl } from "@/lib/links";
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,7 +52,7 @@ export function Navbar() {
           <Link href="#faq" className="px-4 py-1.5 rounded-full bg-[#FFF0CB] text-[13px] font-medium text-foreground hover:bg-[#F2E0B6] transition-colors">
             FAQ
           </Link>
-          <Link href="/buat" className="px-4 py-1.5 rounded-full bg-[#FFF0CB] text-[13px] font-medium text-foreground hover:bg-[#F2E0B6] transition-colors">
+          <Link href={getWhatsAppUrl("Halo Merijé, saya ingin bertanya soal undangan digital.")} target="_blank" rel="noopener noreferrer" className="px-4 py-1.5 rounded-full bg-[#FFF0CB] text-[13px] font-medium text-foreground hover:bg-[#F2E0B6] transition-colors">
             Hubungi Kami
           </Link>
         </nav>
@@ -84,7 +85,7 @@ export function Navbar() {
               <Link onClick={() => setIsMobileMenuOpen(false)} href="#harga" className="px-4 py-3 font-bold text-foreground hover:bg-[#eadebf] rounded-xl transition-colors">Harga</Link>
               <Link onClick={() => setIsMobileMenuOpen(false)} href="#faq" className="px-4 py-3 font-bold text-foreground hover:bg-[#eadebf] rounded-xl transition-colors">FAQ</Link>
               <div className="h-px bg-foreground/10 my-1 w-full"></div>
-              <Link onClick={() => setIsMobileMenuOpen(false)} href="/buat" className="px-4 py-3.5 font-bold text-foreground bg-[#FFD628] rounded-xl text-center mt-1 flex justify-center items-center gap-2">
+              <Link onClick={() => setIsMobileMenuOpen(false)} href={getWhatsAppUrl("Halo Merijé, saya ingin bertanya soal undangan digital.")} target="_blank" rel="noopener noreferrer" className="px-4 py-3.5 font-bold text-foreground bg-[#FFD628] rounded-xl text-center mt-1 flex justify-center items-center gap-2">
                 Hubungi Kami
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
               </Link>

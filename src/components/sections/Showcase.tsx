@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "../layout/Container";
 import Link from "next/link";
+import { ENGINE_URL } from "@/lib/links";
 
 export function Showcase() {
   return (
@@ -52,7 +53,7 @@ export function Showcase() {
         >
           {/* Top navigation/tags mockup */}
           <div className="absolute top-6 left-6 right-6 md:top-8 md:left-8 md:right-8 flex justify-between items-center z-10 text-white">
-            <span className="font-bold text-[17px] md:text-xl tracking-tight hidden sm:block">Merijé x <span className="font-serif italic font-normal">Klien</span></span>
+            <span className="font-bold text-[17px] md:text-xl tracking-tight hidden sm:block">Merijé x <span className="font-serif italic font-normal">Contoh Desain</span></span>
             <div className="flex gap-2 text-[10px] md:text-sm font-medium w-full sm:w-auto justify-center sm:justify-end">
               <span className="bg-white/20 px-3 py-1.5 md:px-4 md:py-2 rounded-full backdrop-blur-sm">Nuansa Floral</span>
               <span className="bg-white/20 px-3 py-1.5 md:px-4 md:py-2 rounded-full backdrop-blur-sm">Desain Bersih</span>
@@ -74,8 +75,10 @@ export function Showcase() {
             <p className="text-white/90 text-base md:text-lg max-w-md mx-auto mb-10 leading-relaxed">
               Desain undangan dengan sentuhan pesisir yang tenang. Terinspirasi dari deburan ombak dan hangatnya kebersamaan.
             </p>
-            <Link 
-              href="#"
+            <Link
+              href={ENGINE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#D4F636] text-foreground rounded-full text-sm md:text-base font-bold hover:bg-[#D4F636]/90 transition-transform hover:scale-105"
             >
               Lihat Undangan

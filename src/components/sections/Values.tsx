@@ -75,7 +75,7 @@ export function Values() {
           >
             <div className="bg-[#F5EEDC] p-6 md:p-8 flex-1">
               <p className="text-foreground/80 text-[14px] md:text-[15px] leading-[1.6]">
-                Tidak ada yang lebih menjengkelkan dari undangan yang lambat memuat halaman. Kami sangat menjaga performa dengan mengoptimalkan setiap foto dan kode agar <strong className="font-bold text-foreground">undanganmu terbuka instan di perangkat apa pun</strong>, bahkan dengan sinyal lemah.
+                Tidak ada yang lebih menjengkelkan dari undangan yang lambat memuat halaman. Kami sangat menjaga performa dengan merapikan ukuran setiap foto dan kode agar <strong className="font-bold text-foreground">undanganmu terbuka instan di perangkat apa pun</strong>, bahkan dengan sinyal lemah.
               </p>
             </div>
             <div className="bg-[#A881F3] p-5 md:p-6 flex items-center gap-4">
@@ -99,7 +99,7 @@ export function Values() {
           >
             <div className="bg-[#F5EEDC] p-6 md:p-8 flex-1">
               <p className="text-foreground/80 text-[14px] md:text-[15px] leading-[1.6]">
-                Tidak ada biaya jebakan. Semua fitur esensial yang kamu butuhkan sudah termasuk di awal. <strong className="font-bold text-foreground">Kami tidak akan pernah memintamu membayar ekstra</strong> hanya untuk menambah jumlah tamu atau sekadar menghilangkan *watermark*.
+                Tidak ada biaya jebakan. Semua fitur esensial yang kamu butuhkan sudah termasuk di awal. <strong className="font-bold text-foreground">Kami tidak akan pernah memintamu membayar ekstra</strong> hanya untuk menambah jumlah tamu atau sekadar menghilangkan <em>watermark</em>.
               </p>
             </div>
             <div className="bg-[#D4F636] p-5 md:p-6 flex items-center gap-4">
