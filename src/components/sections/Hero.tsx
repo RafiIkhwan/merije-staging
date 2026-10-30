@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, useScroll, useTransform, type Variants } from "framer-motion";
 import { useRef } from "react";
+import { ENGINE_URL } from "@/lib/links";
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -72,8 +73,10 @@ export function Hero() {
                   tapi undangan digital<br />
                   yang terasa personal.
                 </h2>
-                <Link 
-                  href="/buat"
+                <Link
+                  href={ENGINE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3.5 bg-foreground text-background rounded-full text-sm font-medium hover:bg-foreground/90 transition-transform hover:scale-105"
                 >
                   Buat undangan sekarang
@@ -119,12 +122,13 @@ export function Hero() {
               variants={cardVariant}
               className="relative bg-[#EAE5D9] rounded-[2rem] overflow-hidden min-h-[360px] md:min-h-[400px]"
             >
-              {/* Image Placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center p-8">
-                <div className="text-center">
-                  <p className="font-serif italic text-foreground/40 text-xl">Visual Fotografi Studio</p>
-                </div>
-              </div>
+              <Image
+                src="/wedding-asset.png"
+                alt="Visual Fotografi Studio"
+                fill
+                className="object-cover"
+                priority
+              />
             </motion.div>
           </div>
 
